@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Product page of shopping website" />
+        <title>Product Page</title>
+        <!-- normalize.css -->
+        <link rel="stylesheet" href="./css/normalize.css" />
+        <!-- style.css -->
+        <link rel="stylesheet" href="./css/style.css" />
+        <!-- product.css -->
+        <link rel="stylesheet" href="./css/product.css" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-JFKRF4KBQD"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-JFKRF4KBQD');
+        </script>
+    </head>
+    <body>
+        <!-- nav -->
+        <nav class="main-nav">
+            <div class="nav">
+                <div class="logo">
+                    <a class="btn-logo01" href="./">
+                        <img
+                            class="logo-img"
+                            src="./images/logo.png"
+                            alt="logo"
+                        />
+                    </a>
+                </div>
+                <div class="category-list">
+                    <a class="female-dress" href="./?tag=women">女裝</a>
+                    <a class="male-dress" href="./?tag=men">男裝</a>
+                    <a class="accessories" href="./?tag=accessories">配件</a>
+                </div>
+                <div class="search">
+                    <!-- Form Input -->
+                    <form id="search-form" action="index.html" method="GET">
+                        <input
+                            id="searchValue"
+                            class="search-input"
+                            type="text"
+                            name="keyword"
+                        />
+                    </form>
+                    <img
+                        class="magnifier"
+                        src="./images/search.png"
+                        alt="放大鏡"
+                    />
+                </div>
+                <div class="nav-icon">
+                    <div class="shopping-cart">
+                        <a href="cart.html">
+                            <img src="./images/cart.png" alt="" />
+                        </a>
+                        <span class="cart-num">0</span>
+                    </div>
+                    <div class="member-profolio memberIcon">
+                        <img src="./images/member-hover.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- mobile header -->
+        <div class="header">
+            <div class="mobile-category-list">
+                <a class="female-dress" href="./?tag=women">女裝</a>
+                <p>|</p>
+                <a class="male-dress" href="./?tag=men">男裝</a>
+                <p>|</p>
+                <a class="accessories" href="./?tag=accessories">配件</a>
+            </div>
+        </div>
+        <!-- main   -->
+        <main>
+            <div class="view">
+                <div class="product-main-image"></div>
+                <div class="detail">
+                    <div class="name"></div>
+                    <div class="id"></div>
+                    <div class="price"></div>
+                    <div class="colors">
+                        <p class="title">顏色&nbsp;|</p>
+                    </div>
+                    <div class="sizes">
+                        <p class="title">尺寸&nbsp;|</p>
+                    </div>
+                    <div class="quantity">
+                        <p class="title">數量&nbsp;|</p>
+                        <div class="chooser">
+                            <div class="option" id="minusOne">-</div>
+                            <div class="value">1</div>
+                            <div class="option" id="addOne">+</div>
+                        </div>
+                    </div>
+                    <div class="add-cart">
+                        <button class="product-add-cart-btn">加入購物車</button>
+                    </div>
+                    <div class="summery">
+                        <div class="note"></div>
+                        <div class="texture"></div>
+                        <div class="des"></div>
+                        <div class="wash"></div>
+                        <div class="place"></div>
+                    </div>
+                </div>
+                <div class="separate">
+                    <div class="more-detail">更多產品資訊</div>
+                    <hr class="line" />
+                </div>
+                <div class="description"></div>
+            </div>
+        </main>
+        <!-- footer -->
+        <footer class="main-footer">
+            <div class="footer-bg">
+                <div class="big-link">
+                    <div class="out-link">
+                        <div class="link link-0">
+                            <a href="index.html">關於 Stylish</a>
+                            <a href="index.html">服務條款</a>
+                            <a href="index.html">隱私政策</a>
+                        </div>
+                        <div class="link link-1">
+                            <a href="index.html">聯絡我們</a>
+                            <a href="index.html">FAQ</a>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <div class="line">
+                            <img src="./images/line.png" alt="" />
+                        </div>
+                        <div class="twitter">
+                            <img src="./images/twitter.png" alt="" />
+                        </div>
+                        <div class="fb">
+                            <img src="./images/facebook.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="copy-right">
+                    <p>&copy; 2018. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- footer fix bar -->
+        <div class="fix-bar">
+            <div class="shopping-cart-mobile">
+                <a href="cart.html">
+                    <img src="./images/cart-mobile.png" alt="" />
+                </a>
+                <span class="cart-num">0</span>
+                <p>購物車</p>
+            </div>
+            <div class="one">
+                <p>|</p>
+            </div>
+            <div class="member-profolio-mobile memberIcon">
+                <img src="./images/member-mobile.png" alt="" />
+                <p>會員</p>
+            </div>
+        </div>
+
+        <!-- login.js -->
+        <script src="./js/login.js"></script>
+        <!-- <script
+            async
+            defer
+            crossorigin="anonymous"
+            src="https://connect.facebook.net/en_US/sdk.js"
+        ></script> -->
+        <!-- localStorage.js -->
+        <script src="./js/localStorage.js"></script>
+        <!-- index.js -->
+        <script src="./js/index.js"></script>
+        <!-- search.js -->
+        <script src="./js/search.js"></script>
+    </body>
+</html>

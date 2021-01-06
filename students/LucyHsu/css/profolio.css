@@ -1,0 +1,89 @@
+body {
+    height: 100vh;
+    position: relative;
+    font-family: 'Noto Sans TC', '微軟正黑體', '新細明體', arial, sans-serif;
+    color: #3f3a3a;
+}
+.main-footer {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+}
+.view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+.myPhoto img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+.profolio-id::before {
+    content: '會員編號 : ';
+    margin-right: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.profolio-name::before {
+    content: '姓名 : ';
+    margin-right: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.profolio-email::before {
+    content: '信箱 : ';
+    margin-right: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.profolio-id,
+.profolio-name,
+.profolio-email {
+    display: flex;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.logout button {
+    background-color: #3f3a3a;
+    color: #ffffff;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 8px 15px;
+}
+.logout button:hover {
+    cursor: pointer;
+}
+@media (max-width: 420px) {
+    .view {
+        flex-direction: column;
+        margin: 0;
+    }
+    .myPhoto {
+        margin: 0;
+    }
+    .myPhoto img {
+        margin: 0 0 20px 0;
+    }
+}
+@media (min-width: 421px) {
+    .view {
+        flex-wrap: wrap;
+        /* margin: 0 auto; */
+    }
+    .myPhoto {
+        /* width: 20%; */
+        /* display: flex; */
+        /* justify-content: center; */
+    }
+    .right {
+        /* width: 80%; */
+    }
+    .logout {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,34 @@
+body {
+    font-size: 16px;
+    font-family: 'Noto Sans TC', '微軟正黑體', '新細明體', arial, sans-serif;
+    color: #3f3a3a;
+}
+.main {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px 0;
+}
+.first {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    border-bottom: 1px solid #979797;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    padding-bottom: 20px;
+}
+.two {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+#number {
+    background-color: #eeeeee;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,404 @@
+body {
+    font-size: 16px;
+    font-family: 'Noto Sans TC', '微軟正黑體', '新細明體', arial, sans-serif;
+    color: #3f3a3a;
+}
+main {
+    padding: 10px 20px;
+}
+.view {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/*===============================================
+                .cart    
+=================================================*/
+.cart {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.cart .title {
+    display: flex;
+    font-weight: bold;
+    padding: 0 10px;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+.cart .title .variant,
+.cart .title .qty,
+.cart .title .price,
+.cart .title .subtotal,
+.cart .title .remove {
+    flex: auto;
+}
+.cart .title .variant {
+    /* flex: none; */
+    /* width: 190px; */
+    width: 260px;
+}
+.cart .title .remove {
+    width: 30px;
+}
+.cart .list {
+    border: 1px solid #979797;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.cart .list .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.cart .list .row .variant .picture {
+    width: 100px;
+}
+.cart .list .row .variant .picture img {
+    width: 100%;
+}
+.cart .list .row:not(:last-child) {
+    border-bottom: 1px solid #888888;
+}
+.cart .list .row .qty,
+.cart .list .row .price,
+.cart .list .row .subtotal {
+    text-align: left;
+}
+.cart .list .row .variant {
+    display: flex;
+}
+.cart .list .row .variant .details {
+    font-size: 0.9rem;
+    text-align: left;
+    margin-left: 10px;
+}
+.cart .list .row .remove img {
+    cursor: pointer;
+}
+.cart .list .row .qty select {
+    padding: 4px;
+    background-color: #f3f3f3;
+    border-radius: 4px;
+}
+/*===============================================
+                .target    
+=================================================*/
+.target {
+    display: flex;
+    justify-content: space-around;
+    background-color: #e8e8e8;
+    padding: 20px 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.target .country select {
+    padding: 4px;
+    background-color: #f3f3f3;
+    border-radius: 4px;
+    font-size: 5px;
+    margin-top: 5px;
+}
+
+/*===============================================
+                .reminder    
+=================================================*/
+.reminder {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.reminder div {
+    /* width: 100%; */
+    margin-bottom: 10px;
+    font-size: 8px;
+}
+
+/*===============================================
+                .recipient    
+=================================================*/
+.recipient .title {
+    border-bottom: 1px solid #3f3a3a;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.recipient .line {
+    margin-bottom: 20px;
+}
+.recipient .line .input > input {
+    padding: 5px 0;
+}
+.recipient .line .input {
+    margin-top: 10px;
+}
+/*===============================================
+                .payment    
+=================================================*/
+.payment .title {
+    border-bottom: 1px solid #3f3a3a;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.payment .line {
+    margin-bottom: 20px;
+}
+.payment .line .text {
+    margin-bottom: 10px;
+}
+.payment .line .input > div {
+    padding: 5px 0;
+}
+.tpfield {
+    height: 40px;
+    width: 300px;
+    border: 1px solid gray;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 3px;
+}
+/*===============================================
+                .confirm    
+=================================================*/
+.confirm {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    border-top: 1px solid #3f3a3a;
+}
+.confirm .row {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+.confirm .row #checkout {
+    color: #ffffff;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.confirm .row .title {
+    width: 100px;
+}
+.confirm .row .price {
+    width: 120px;
+    text-align: right;
+}
+.confirm .row .separator {
+    height: 1px;
+    background-color: #3f3a3a;
+    width: 240px;
+}
+.disabled {
+    opacity: 0.3;
+}
+@media (max-width: 700px) {
+    .cart .title {
+        display: none;
+    }
+    .cart .list .row .variant {
+        width: 90%;
+        order: -1;
+    }
+    .cart .list .row .remove {
+        width: 10%;
+        order: -1;
+    }
+    .cart .list .row .qty::before {
+        content: '數量';
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .cart .list .row .price::before {
+        content: '單價';
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .cart .list .row .subtotal::before {
+        content: '小計';
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .cart .list .row {
+        padding-bottom: 15px;
+    }
+    .cart .list .row:not(:first-child) {
+        padding-top: 10px;
+    }
+    .target .country .text {
+        display: block;
+    }
+    .recipient .line .input #recipient-name,
+    .recipient .line .input #recipient-email,
+    .recipient .line .input #recipient-phone,
+    .recipient .line .input #recipient-address,
+    .payment .line .input #card-number,
+    .payment .line .input #card-expiration-date,
+    .payment .line .input #card-ccv {
+        width: 100%;
+    }
+    .recipient .line .input {
+        display: flex;
+        flex-direction: column;
+    }
+    .recipient .line .input label {
+        margin-bottom: 5px;
+    }
+    .confirm .row #checkout {
+        width: 100%;
+    }
+}
+@media (min-width: 701px) {
+    .cart .list .row {
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .cart .list .row .variant,
+    .cart .list .row .qty,
+    .cart .list .row .price,
+    .cart .list .row .subtotal,
+    .cart .list .row .remove {
+        flex: auto;
+    }
+    .cart .list .row .variant .details {
+        width: 150px;
+    }
+    .recipient .line .input label {
+        margin-right: 30px;
+    }
+    .recipient .line .input > input {
+        width: 300px;
+    }
+    .payment .line .input > div {
+        width: 300px;
+    }
+    .confirm .row #checkout {
+        width: 240px;
+    }
+}
+/* 載入中動畫 */
+.outerLoading {
+    background-color: #babababa;
+    opacity: 0.8;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    display: none;
+}
+.loader {
+    color: #ffffff;
+    font-size: 90px;
+    text-indent: -9999em;
+    overflow: hidden;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    margin: 72px auto;
+    position: relative;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+    animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+@-webkit-keyframes load6 {
+    0% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+            0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+            0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em,
+            -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em,
+            -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em,
+            -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em,
+            -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em,
+            -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em,
+            -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+            0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+}
+@keyframes load6 {
+    0% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+            0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+            0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em,
+            -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em,
+            -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em,
+            -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em,
+            -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em,
+            -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em,
+            -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+            0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+}
+@-webkit-keyframes round {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes round {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
