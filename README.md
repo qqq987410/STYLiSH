@@ -4,7 +4,9 @@
 
 ### Demo Link   =>   https://qqq987410.github.io/STYLiSH/students/LucyHsu/
 
-#### Technologies:
+
+
+#### Technologies
 
 -  Front-End Development
    -  HTML
@@ -20,5 +22,4 @@
 #### Demo
 
 -  Search and choose products then checkout.
-
 ![image](https://github.com/qqq987410/STYLiSH/blob/master/demo.gif)
