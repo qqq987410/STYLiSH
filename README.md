@@ -2,7 +2,7 @@
 
 ### An e-commerce shopping website that facilitates users to search for products through simple categories, and connects with cash flow services to realize online shopping.
 
-### Demo Link: https://qqq987410.github.io/STYLiSH/students/LucyHsu/
+### Demo Link   =>   https://qqq987410.github.io/STYLiSH/students/LucyHsu/
 
 #### Technologies:
 
@@ -17,6 +17,8 @@
    -  Prettier
    -  Sourcetree
 
-#### Demo:
+#### Demo
 
-![image](https://github.com/qqq987410/STYLiSH/blob/master/stylishDemoGif.gif)
+-  Search and choose products then checkout.
+
+![image](https://github.com/qqq987410/STYLiSH/blob/master/demo.gif)
