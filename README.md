@@ -1,58 +1,19 @@
-# Front-End Class Batch #12
+# STYLiSH
 
-## Outline
+## An e-commerce shopping website that facilitates users to search for products through simple categories, and connects with cash flow services to realize online shopping.
 
-### Programming Language
-- HTML
-- CSS
-- JavaScript(ES6)
+### https://qqq987410.github.io/Front-End-Class-Batch12/students/LucyHsu/
 
-### Layout
-- Responsive Web Design(RWD)
-- Flex and Grid Layout
-- Single Page Application(SPA)
+#### Technologies:
 
-### Library and Framework
-- React
-- Redux
-- React Router
-- Creact React App(CSS Module, SASS/SCSS)
-- Facebook SDK
-
-### Backend Framework and Cloud Service
-- Node.js and Express
-- Firebase
-
-### Networking
-- HTTP/HTTPS
-- JSON
-- RESTful APIs
-- AJAX(Fetch, Axios)
-- CORS
-
-### Persistent Store
-- Web Storage
-- Cookie
-
-### Patterns
-- Module
-- Object-Oriented Programming
-- Functional Programming
-- MVC
-
-### Others
-- Unit Test & Debugging
-- Performance Optimization
-- Cache
-- End to End Test
-
-### Tools for Development
-- ESLint
-- Prettier
-- Webpack
-- Git, GitHub, Sourcetree
-- Slack
-
-### Tools for Business
-- Google Analytics
-- Google PageSpeed Insights
+-  Front-End Development
+   -  HTML
+   -  CSS
+   -  JavaScript
+-  Library
+   -  Facebook SDK
+-  Tools for Development
+   -  ESLint
+   -  Prettier
+   -  Git / GitHub
+   -  Sourcetree
