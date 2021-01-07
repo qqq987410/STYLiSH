@@ -1,6 +1,6 @@
 # STYLiSH
 
-## An e-commerce shopping website that facilitates users to search for products through simple categories, and connects with cash flow services to realize online shopping.
+### An e-commerce shopping website that facilitates users to search for products through simple categories, and connects with cash flow services to realize online shopping.
 
 ### https://qqq987410.github.io/STYLiSH/students/LucyHsu/
 
@@ -15,5 +15,4 @@
 -  Tools for Development
    -  ESLint
    -  Prettier
-   -  Git / GitHub
    -  Sourcetree
