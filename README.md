@@ -4,7 +4,9 @@
 
 ### Demo Link   =>   https://qqq987410.github.io/STYLiSH/students/LucyHsu/
 
-##### Card Number: 4242-4242-4242-4242 / Valid Thru: 01/23 / Card Security Code: 123
+#### Card Number: 4242-4242-4242-4242
+#### Valid Thru: 01/23
+#### Card Security Code: 123
 
 
 #### Technologies
